@@ -33,15 +33,15 @@
               <!-- user info -->
               <div class="user-info d-flex align-items-center">
                 <img :src="`img/avatar${user.avatar}.jpg`" class="img-user"></img>
-                <div class="username">{{user.name}}</div>
+                <h6 class="username ms-3 d-flex align-items-center">{{user.name}}</h6>
               </div>
               <!-- aside options -->
               <div
                 class="options d-flex align-items-center justify-content-end"
               >
-                <div class="option"></div>
-                <div class="option"></div>
-                <div class="option"></div>
+                <div class="option d-flex align-items-center justify-content-center"><i class="fa-solid fa-circle-notch"></i></div>
+                <div class="option d-flex align-items-center justify-content-center"><i class="fa-solid fa-message"></i></div>
+                <div class="option d-flex align-items-center justify-content-center"><i class="fa-solid fa-ellipsis-vertical"></i></div>
               </div>
             </div>
             <!-- notfication -->
@@ -79,7 +79,7 @@
                 >
                   <div class="contact-box d-flex">
                     <img :src="`img/avatar${contact.avatar}.jpg`" class="contact-img"></img>
-                    <h6 class="contact-name">{{contact.name}}</h6>
+                    <h6 class="contact-name  ms-3">{{contact.name}}</h6>
                   </div>
                 </li>
               </ul>
@@ -94,16 +94,16 @@
                 <!-- main contact info -->
                 <div class="main-contact-info">
                   <div class="main-contact-username">{{}}</div>
-                  <div class="last-seen">{{}}</div>
+                  <div class="last-seen">Ultimo accesso oggi alle {{}}</div>
                 </div>
               </div>
               <!-- contact options -->
               <div
                 class="options d-flex align-items-center justify-content-end"
               >
-                <div class="option"></div>
-                <div class="option"></div>
-                <div class="option"></div>
+                <div class="main-contact-option d-flex align-items-center justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="main-contact-option d-flex align-items-center justify-content-center"><i class="fa-solid fa-paperclip"></i></div>
+                <div class="main-contact-option d-flex align-items-center justify-content-center"><i class="fa-solid fa-ellipsis-vertical"></i></div>
               </div>
             </div>
             <!-- chat -->

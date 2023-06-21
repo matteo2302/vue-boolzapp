@@ -29,23 +29,23 @@ aside {
 .user-info {
   height: 100%;
   width: 45%;
-  border: 1px dashed black;
 }
 
 .img-user {
   width: 30%;
-  height: 80%;
-  border: 1px dashed black;
+  overflow: hidden;
+  border-radius: 100%;
 }
 .username {
   width: 70%;
   height: 80%;
-  border: 1px dashed black;
 }
+.main-contact-option,
 .option {
-  width: 25%;
+  width: 20%;
   height: 80%;
-  border: 1px dashed black;
+  font-size: 27px;
+  color: rgb(177, 177, 177);
 }
 /**************************************** notification *************************************/
 
@@ -100,16 +100,20 @@ li {
   height: 80%;
   width: 90%;
 }
-.contact-img,
+
 .contact-name {
   height: 100%;
-  border: 1px dashed black;
 }
 .contact-img {
-  width: 17%;
+  width: 10%;
+  overflow: hidden;
+  border-radius: 100%;
 }
 .contact-name {
   width: 80%;
+}
+.main-contact-option {
+  width: 15%;
 }
 /**************************************** main *************************************/
 main {
