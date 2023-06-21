@@ -81,6 +81,7 @@ aside {
   width: 100%;
   background-color: rgb(250, 250, 250);
 }
+
 .form-control {
   border: none;
   height: 30px;
@@ -150,8 +151,16 @@ main {
   overflow: auto;
 }
 /**************************************** message-bar *************************************/
-.message-bar {
+.message-bar-place {
   height: 80px;
   width: 100%;
   background-color: rgb(243, 238, 234);
+}
+.message-bar-box {
+  height: 90px;
+  width: 100%;
+}
+.message-bar {
+  height: 60px;
+  width: 75%;
 }
