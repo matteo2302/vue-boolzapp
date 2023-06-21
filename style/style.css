@@ -11,16 +11,13 @@ body {
   width: 80%;
 }
 
-main {
-  background-color: blue;
-  width: 70%;
-}
 /****************************************** aside******************************************/
 aside {
   background-color: red;
   width: 30%;
 }
 /****************************************** user ******************************************/
+.main-contact,
 .notification,
 .user {
   height: 80px;
@@ -29,13 +26,35 @@ aside {
 .user {
   background-color: white;
 }
+/**************************************** notification *************************************/
+.main-contact,
 .notification {
   background-color: yellow;
 }
+/**************************************** contact *************************************/
 
 .contacts {
   height: 100%;
+}
+.contacts,
+.chat {
   width: 100%;
   background-color: pink;
   overflow: auto;
+}
+/**************************************** main *************************************/
+main {
+  background-color: blue;
+  width: 70%;
+}
+/**************************************** main-contact *************************************/
+/**************************************** chat *************************************/
+.chat {
+  height: calc(100% - 160px);
+}
+/**************************************** message-bar *************************************/
+.message-bar {
+  height: 80px;
+  width: 100%;
+  background-color: green;
 }
