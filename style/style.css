@@ -9,3 +9,11 @@ body {
   margin: 0 auto;
   height: 95vh;
 }
+aside {
+  background-color: red;
+  width: 30%;
+}
+main {
+  background-color: blue;
+  width: 70%;
+}
