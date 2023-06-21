@@ -32,8 +32,8 @@
             <div class="user d-flex flex-shrink-0 justify-content-center">
               <!-- user info -->
               <div class="user-info d-flex align-items-center">
-                <div class="img-user"></div>
-                <div class="username">{{}}</div>
+                <img :src="`img/avatar${user.avatar}.jpg`" class="img-user"></img>
+                <div class="username">{{user.name}}</div>
               </div>
               <!-- aside options -->
               <div
@@ -75,10 +75,10 @@
               <ul class="list-group">
                 <li
                   v-for="(contact,i) in contacts"
-                  class="rounded-0 list-group-item p-0 d-flex align-items-center justify-content-center"
+                  class="rounded-0 list-group-item p-0 d-flex align-items-center justify-content-center" :key="contact.id"
                 >
                   <div class="contact-box d-flex">
-                    <img src="img/avatar(contact.avatar).jpg" class="contact-img"></img>
+                    <img :src="`img/avatar${contact.avatar}.jpg`" class="contact-img"></img>
                     <h6 class="contact-name">{{contact.name}}</h6>
                   </div>
                 </li>
