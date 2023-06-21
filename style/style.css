@@ -5,15 +5,37 @@ body {
 .background {
   height: 100vh;
 }
-.container {
+.container-fluid {
   margin: 0 auto;
   height: 95vh;
+  width: 80%;
 }
+
+main {
+  background-color: blue;
+  width: 70%;
+}
+/****************************************** aside******************************************/
 aside {
   background-color: red;
   width: 30%;
 }
-main {
-  background-color: blue;
-  width: 70%;
+/****************************************** user ******************************************/
+.notification,
+.user {
+  height: 80px;
+  width: 100%;
+}
+.user {
+  background-color: white;
+}
+.notification {
+  background-color: yellow;
+}
+
+.contacts {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  overflow: auto;
 }
