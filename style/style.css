@@ -24,7 +24,7 @@ aside {
   width: 100%;
 }
 .user {
-  background-color: white;
+  background-color: rgb(234, 234, 234);
 }
 .options,
 .user-info {
@@ -49,7 +49,7 @@ aside {
   border: 1px dashed black;
 }
 /**************************************** notification *************************************/
-.main-contact,
+
 .notification {
   background-color: rgb(142, 218, 252);
 }
@@ -74,11 +74,8 @@ aside {
 .contacts {
   height: 100%;
 }
-.contacts,
-.chat {
-  width: 100%;
-  background-color: pink;
-  overflow: auto;
+.contacts {
+  background-color: white;
 }
 
 /**************************************** search-bar-box *************************************/
@@ -118,17 +115,23 @@ li {
 }
 /**************************************** main *************************************/
 main {
-  background-color: blue;
   width: 60%;
+  border-left: 1px rgb(88, 88, 247) solid;
 }
 /**************************************** main-contact *************************************/
+.main-contact {
+  background-color: rgb(234, 234, 234);
+}
 /**************************************** chat *************************************/
 .chat {
   height: calc(100% - 160px);
+  width: 100%;
+  background-image: url("../img/mine.jpg");
+  overflow: auto;
 }
 /**************************************** message-bar *************************************/
 .message-bar {
   height: 80px;
   width: 100%;
-  background-color: green;
+  background-color: rgb(243, 238, 234);
 }
