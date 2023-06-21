@@ -29,7 +29,7 @@
           <!-- aside -->
           <aside class="d-flex flex-column">
             <!-- user -->
-            <div class="user d-flex flex-shrink-0">
+            <div class="user d-flex flex-shrink-0 justify-content-center">
               <!-- user info -->
               <div class="user-info d-flex align-items-center">
                 <div class="img-user"></div>
@@ -44,8 +44,31 @@
                 <div class="option"></div>
               </div>
             </div>
-            <div class="notification flex-shrink-0"></div>
-            <div class="contacts"></div>
+            <!-- notfication -->
+            <div
+              class="notification flex-shrink-0 d-flex align-items-center justify-content-center"
+            >
+              <div class="ms-3 notification-box d-flex">
+                <div class="notification-img"></div>
+                <div class="notification-content"></div>
+              </div>
+            </div>
+            <div class="contacts">
+              <div class="search-bar-box">
+                <form
+                  class="d-flex px-2 bg-grey align-items-center w-100"
+                  role="search"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    class="form-control bg-grey"
+                    type="search"
+                    placeholder=" prova a cercare lezioni di laravel"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+            </div>
           </aside>
           <!-- main -->
           <main>

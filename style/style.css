@@ -29,7 +29,7 @@ aside {
 .options,
 .user-info {
   height: 100%;
-  width: 50%;
+  width: 45%;
   border: 1px dashed black;
 }
 .img-user {
@@ -52,6 +52,22 @@ aside {
 .notification {
   background-color: yellow;
 }
+.notification-box {
+  width: 80%;
+  height: 80%;
+  border: 1px dashed black;
+}
+.notification-content,
+.notification-img {
+  height: 100%;
+  border: 1px dashed black;
+}
+.notification-img {
+  width: 25%;
+}
+.notification-content {
+  width: 75%;
+}
 /**************************************** contact *************************************/
 
 .contacts {
@@ -62,6 +78,13 @@ aside {
   width: 100%;
   background-color: pink;
   overflow: auto;
+}
+.form-control {
+  border: none;
+}
+form {
+  height: 30px;
+  border-radius: 10px;
 }
 /**************************************** main *************************************/
 main {
