@@ -17,7 +17,6 @@ aside {
   width: 40%;
 }
 /****************************************** user ******************************************/
-.main-contact,
 .notification,
 .user {
   height: 80px;
@@ -70,14 +69,12 @@ aside {
   width: 75%;
 }
 /**************************************** contacts *************************************/
-
 .contacts {
   height: 100%;
 }
 .contacts {
   background-color: white;
 }
-
 /**************************************** search-bar-box *************************************/
 .search-bar-box {
   height: 50px;
@@ -121,6 +118,29 @@ main {
 /**************************************** main-contact *************************************/
 .main-contact {
   background-color: rgb(234, 234, 234);
+  height: 80px;
+  width: 100%;
+}
+.main-contact-box {
+  height: 100%;
+  width: 45%;
+  border: 1px dashed black;
+}
+.main-contact-info {
+  width: 70%;
+  height: 80%;
+  border: 1px dashed black;
+}
+.last-seen,
+.main-contact-username {
+  height: 50%;
+  width: 100%;
+  border: 1px dashed black;
+}
+.main-img-user {
+  width: 30%;
+  height: 80%;
+  border: 1px dashed black;
 }
 /**************************************** chat *************************************/
 .chat {
