@@ -164,3 +164,9 @@ main {
   height: 60px;
   width: 75%;
 }
+.emoji,
+.pin {
+  width: 10%;
+  height: 60px;
+  border: 1px dashed black;
+}
