@@ -14,7 +14,7 @@ body {
 /****************************************** aside******************************************/
 aside {
   background-color: red;
-  width: 30%;
+  width: 40%;
 }
 /****************************************** user ******************************************/
 .main-contact,
@@ -25,6 +25,27 @@ aside {
 }
 .user {
   background-color: white;
+}
+.options,
+.user-info {
+  height: 100%;
+  width: 50%;
+  border: 1px dashed black;
+}
+.img-user {
+  width: 30%;
+  height: 80%;
+  border: 1px dashed black;
+}
+.username {
+  width: 70%;
+  height: 80%;
+  border: 1px dashed black;
+}
+.option {
+  width: 25%;
+  height: 80%;
+  border: 1px dashed black;
 }
 /**************************************** notification *************************************/
 .main-contact,
@@ -45,7 +66,7 @@ aside {
 /**************************************** main *************************************/
 main {
   background-color: blue;
-  width: 70%;
+  width: 60%;
 }
 /**************************************** main-contact *************************************/
 /**************************************** chat *************************************/
