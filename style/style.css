@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(0, 150, 136) 13%, rgb(217, 219, 213) 13%);
+}
+.background {
+  height: 100vh;
+}
+.container {
+  margin: 0 auto;
+  height: 95vh;
+}
