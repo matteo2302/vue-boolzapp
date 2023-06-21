@@ -29,7 +29,7 @@
           <!-- aside -->
           <aside class="d-flex flex-column">
             <!-- user -->
-            <div class="user d-flex flex-shrink-0 justify-content-center">
+            <div class="user d-flex flex-shrink-0 justify-content-center pt-3 pb-3">
               <!-- user info -->
               <div class="user-info d-flex align-items-center">
                 <img :src="`img/avatar${user.avatar}.jpg`" class="img-user"></img>
@@ -49,8 +49,11 @@
               class="notification flex-shrink-0 d-flex align-items-center justify-content-center"
             >
               <div class="ms-3 notification-box d-flex">
-                <div class="notification-img"></div>
-                <div class="notification-content"></div>
+                <div class="notification-img d-flex align-items-center justify-content-center"><i class="fa-solid fa-bell-slash"></i></div>
+                <div class="notification-content ms-3">
+                  <p>Ricevi notifiche di nuovi messaggi</p>
+                  <a href="#"> Attiva notifiche deskstop</a>
+                </div>
               </div>
             </div>
             <div class="contacts">
@@ -115,14 +118,14 @@
               <div
                 class="message-bar-box d-flex align-items-center justify-content-center"
               >
-                <div class="emoji"></div>
+                <div class="emoji d-flex align-items-center justify-content-center"><i class="fa-regular fa-face-smile"></i></div>
                 <input
                   class="message-bar form-control bg-grey"
                   type="search"
                   placeholder="Scrivi un messaggio"
                   aria-label="Search"
                 />
-                <div class="pin"></div>
+                <div class="mic d-flex align-items-center justify-content-center"><i class="fa-solid fa-microphone"></i></div>
               </div>
             </div>
           </main>
