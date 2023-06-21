@@ -32,6 +32,7 @@ aside {
   width: 45%;
   border: 1px dashed black;
 }
+
 .img-user {
   width: 30%;
   height: 80%;
@@ -68,7 +69,7 @@ aside {
 .notification-content {
   width: 75%;
 }
-/**************************************** contact *************************************/
+/**************************************** contacts *************************************/
 
 .contacts {
   height: 100%;
@@ -94,6 +95,26 @@ form {
   height: 30px;
   width: 85%;
   background-color: white;
+}
+/**************************************** contact list *************************************/
+li {
+  height: 70px;
+  padding: 0;
+}
+.contact-box {
+  height: 80%;
+  width: 90%;
+}
+.contact-img,
+.contact-name {
+  height: 100%;
+  border: 1px dashed black;
+}
+.contact-img {
+  width: 17%;
+}
+.contact-name {
+  width: 80%;
 }
 /**************************************** main *************************************/
 main {
