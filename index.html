@@ -79,6 +79,7 @@
                 <li
                   v-for="(contact,i) in contacts"
                   class="rounded-0 list-group-item p-0 d-flex align-items-center justify-content-center" :key="contact.id"
+                  @click="setCurrentIndex(i)"
                 >
                   <div class="contact-box d-flex">
                     <img :src="`img/avatar${contact.avatar}.jpg`" class="contact-img"></img>
@@ -93,10 +94,12 @@
             <!-- main contact -->
             <div class="main-contact d-flex justify-content-center">
               <div class="main-contact-box d-flex align-items-center">
-                <div class="main-img-user"></div>
+                <div class="main-img-user">
+                  <img :src="`img/avatar${currentContact.avatar}.jpg`" class="contact-img"></img>
+                </div>
                 <!-- main contact info -->
                 <div class="main-contact-info">
-                  <div class="main-contact-username">{{}}</div>
+                  <div class="main-contact-username">{{currentContact.name}}</div>
                   <div class="last-seen">Ultimo accesso oggi alle {{}}</div>
                 </div>
               </div>
@@ -110,7 +113,13 @@
               </div>
             </div>
             <!-- chat -->
-            <div class="chat"></div>
+            <div class="chat pt-4">
+              <ul>
+                <li v-for="element in currentContact.messages" class="massage-container"  :class="element.status" >
+                  {{element.message}}
+                </li>
+              </ul>
+            </div>
             <!-- message bar -->
             <div
               class="message-bar-place d-flex align-items-center justify-content-center"

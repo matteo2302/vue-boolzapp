@@ -4,6 +4,8 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
+      newMessage: "",
+      currentIndex: 0,
       user: {
         name: "Matteo",
         avatar: "_io",
@@ -202,12 +204,14 @@ const app = createApp({
       ],
     };
   },
-  methods: {
-    getAvatarUrl(avatar) {
-      return `img/avatar${avatar}.jpg`;
+  computed: {
+    currentContact() {
+      return this.contacts[this.currentIndex];
     },
-    getAvatarIoUrl(avatar) {
-      return `img/avatar${user.avatar}.jpg`;
+  },
+  methods: {
+    setCurrentIndex(i) {
+      this.currentIndex = i;
     },
   },
 });
