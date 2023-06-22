@@ -4,7 +4,9 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
-      newMessage: "",
+      newMessage: {
+        status: "sent",
+      },
       currentIndex: 0,
       user: {
         name: "Matteo",
@@ -212,6 +214,9 @@ const app = createApp({
   methods: {
     setCurrentIndex(i) {
       this.currentIndex = i;
+    },
+    addNewMessage() {
+      this.currentContact.messages.push(this.newMessage);
     },
   },
 });

@@ -130,9 +130,10 @@
                 <div class="emoji d-flex align-items-center justify-content-center"><i class="fa-regular fa-face-smile"></i></div>
                 <input
                   class="message-bar form-control bg-grey"
-                  type="search"
+                  type="text"
                   placeholder="Scrivi un messaggio"
-                  aria-label="Search"
+                  v-model="newMessage.massage"
+                  @keyup.enter="addNewMessage"
                 />
                 <div class="mic d-flex align-items-center justify-content-center"><i class="fa-solid fa-microphone"></i></div>
               </div>
