@@ -216,7 +216,11 @@ const app = createApp({
       this.currentIndex = i;
     },
     addNewMessage() {
-      this.currentContact.messages.push(this.newMessage);
+      this.currentContact.messages.push({
+        status: "sent",
+        message: this.newMessage.message,
+      });
+      this.newMessage.message = "";
     },
   },
 });
