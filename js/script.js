@@ -221,6 +221,12 @@ const app = createApp({
         message: this.newMessage.message,
       });
       this.newMessage.message = "";
+      setTimeout(() => {
+        this.currentContact.messages.push({
+          status: "received",
+          message: "ok",
+        });
+      }, 1000);
     },
   },
 });
