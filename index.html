@@ -114,9 +114,14 @@
             </div>
             <!-- chat -->
             <div class="chat pt-4">
-              <ul>
-                <li v-for="element in currentContact.messages"  class="massage-container"  :class="element.status">
-                  <div >{{element.message}}</div>
+              <ul class="pe-4">
+                <li v-for="element in currentContact.messages" >
+                  <div  class="massage-container"  :class="element.status">
+                    <div class="d-flex flex-column">
+                     <p class="m-0">{{element.message}}</p>
+                     <p class="date">{{element.date}}</p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>

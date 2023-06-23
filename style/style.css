@@ -167,7 +167,6 @@ main {
 .massage-container {
   height: 45px;
   border-radius: 10px;
-  border: 1px solid black;
   margin-bottom: 20px;
   display: flex;
 }
@@ -180,6 +179,9 @@ main {
 }
 .message {
   padding: 0;
+}
+.date {
+  font-size: 10px;
 }
 /**************************************** message-bar *************************************/
 .message-bar-place {
