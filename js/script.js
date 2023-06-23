@@ -7,7 +7,7 @@ const app = createApp({
       newMessage: {
         status: "sent",
       },
-      keyId: "",
+      keyId: 0,
       searched: "",
       currentIndex: 0,
       user: {
@@ -224,6 +224,7 @@ const app = createApp({
     },
     getCurrentId(key) {
       this.keyId = key;
+      console.log(key);
     },
 
     addNewMessage() {
