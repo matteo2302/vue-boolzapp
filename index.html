@@ -61,27 +61,27 @@
               <div
                 class="search-bar-box d-flex align-items-center justify-content-center"
               >
-                <form
+                <div
                   class="d-flex px-2 bg-grey align-items-center w-80"
-                  role="search"
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input
                     class="form-control bg-grey"
-                    type="search"
+                    type="text"
                     placeholder="Cerca o inizia una nuova chat"
-                    aria-label="Search"
+                    v-model.trim="searched"
                   />
-                </form>
+                </div>
               </div>
               <!-- contact list -->
               <ul class="list-group">
                 <li
-                  v-for="(contact,i) in contacts"
+                  v-for="(contact,i) in filteredContacts"
                   class="rounded-0 list-group-item p-0 d-flex align-items-center justify-content-center" :key="contact.id"
-                  @click="setCurrentIndex(i)"
+                  :class="{bggrey : currentIndex === i}"
+                  @click="getCurrentId(contact.id);"
                 >
-                  <div class="contact-box d-flex">
+                  <div class="contact-box d-flex" >
                     <img :src="`img/avatar${contact.avatar}.jpg`" class="contact-img"></img>
                     <h6 class="contact-name  ms-3">{{contact.name}}</h6>
                   </div>
@@ -115,8 +115,8 @@
             <!-- chat -->
             <div class="chat pt-4">
               <ul>
-                <li v-for="element in currentContact.messages" class="massage-container"  :class="element.status" >
-                  {{element.message}}
+                <li v-for="element in currentContact.messages"  class="massage-container"  :class="element.status">
+                  <div >{{element.message}}</div>
                 </li>
               </ul>
             </div>

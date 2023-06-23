@@ -7,6 +7,8 @@ const app = createApp({
       newMessage: {
         status: "sent",
       },
+      keyId: "",
+      searched: "",
       currentIndex: 0,
       user: {
         name: "Matteo",
@@ -210,11 +212,20 @@ const app = createApp({
     currentContact() {
       return this.contacts[this.currentIndex];
     },
+    filteredContacts() {
+      return this.contacts.filter((element) => {
+        return element.name.includes(this.searched);
+      });
+    },
   },
   methods: {
     setCurrentIndex(i) {
       this.currentIndex = i;
     },
+    getCurrentId(key) {
+      this.keyId = key;
+    },
+
     addNewMessage() {
       this.currentContact.messages.push({
         status: "sent",

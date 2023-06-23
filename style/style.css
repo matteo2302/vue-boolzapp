@@ -85,6 +85,9 @@ aside {
 .contacts {
   background-color: white;
 }
+.bggrey {
+  background-color: rgb(233, 235, 235);
+}
 /**************************************** search-bar-box *************************************/
 .search-bar-box {
   height: 50px;
@@ -105,6 +108,7 @@ form {
 li {
   height: 70px;
   padding: 0;
+  list-style: none;
 }
 .contact-box {
   height: 80%;
@@ -165,18 +169,14 @@ main {
   border-radius: 10px;
   border: 1px solid black;
   margin-bottom: 20px;
-  list-style: none;
+  display: flex;
 }
 .received {
   background-color: white;
-  display: flex;
-  flex-grow: 0;
 }
 .sent {
   background-color: rgb(213, 249, 186);
-  display: flex;
   justify-content: flex-end;
-  flex-grow: 0;
 }
 .message {
   padding: 0;
