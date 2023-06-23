@@ -223,8 +223,10 @@ const app = createApp({
       this.currentIndex = i;
     },
     getCurrentId(key) {
-      this.keyId = key;
-      console.log(key);
+      this.currentIndex = this.contacts.findIndex(
+        (contact) => contact.id === key
+      );
+      console.log(this.currentIndex);
     },
 
     addNewMessage() {
